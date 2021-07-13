@@ -1,28 +1,17 @@
-Reaching task:
-You don't have to use pyrep, you can use coppeliasim directly.
-For the current reaching task, we have 2 agents are available, which are DQN and DDPG.
+This environment is similar as the previous 'Reaching task' folder, but which is compatiable with gym environment.
+I have already used 'stable-baselines' tested this environment, it can work well. You can also take a look at 'DDPG+HER_not_official_version', which include some DDPG+HER implementation that use mpi. 
 
-Installtion:
-Copy this directory localy and install packages you don't have in requirement_reach.txt(I am sorry that I copy my "conda list"
-directly, you can take a look and check what you think may be needed.)
+2 Important files: 1. ur5_symbol_v0.py : This environment is compatiable for most of algorithms which can be applied to continous action space.
+                  2. ur5_symbol_v1.py : This is environment is designed for HER like algorithms, the observation space is in dict format.
+                  
+For the current UR5 gym environment for reaching task, it still has some drawbacks to be improved, if I got time, I will fix it, which are the following:
+1. Doesn't include render part. Actually I am currently using some sentense "I am reaching the target!!!!!!!!!!!!!!", "Touching b3"... to observe the real time performance.
+2. Add a config.json file to store all configuration of the environment. Current code is messy.
+3. Write v0 and v1 together to make the envrionment be compatiable with HER and PPO and other algorithms.
+4. These moving limit of robot's joint still need to be re-colibarated.
+5. Need to have another robot's body checking system, in order that robot's body won't touch safety boundary and self-collision. As to the current one, it can only gurrantee that tip won't touch the boundary.
+6. Check_done function still need to be improved.
 
-Introduction about the file included:
-1. 4 .h5 files: the latest trained model, but not mature, just trained for 1 hour.
-2. DDPG_agent.py: Include the DDPG_agent
-3. DDPG_keras_main_reach.py: The main scrip to start the training by DDPG. 
-4. DQN_agent.py: ...
-5. DQN_train.py: The main scrip to start the training by DQN.
-6. env_base.py: Coppeliasim's RL environment.
-7. ir_utils: Some functions needed.
-8. kinematic.py: Forward kinematic and Inverse Kinematic are calculated here.
-9. math_cal.py: some useful math methods for calculating transfer matrix, pos, quardranion...
-10. reach_task.ttt: coppeliasim environment file
-11. remoteApi.so/sim.py/simConst.py: Leave it here, these files are important for communicating with coppeliasim.  
-                                    These are official files, you can go into these files to see what they are doing.
-12. rl_symbol_env_continous: The mathematical continuous environment.
-13. rl_symbol_env: The mathematical sparse environment.
-14. ur5_kinematic.py: kinematics that compatible with the environment in reach.ttt
-15. UR5_get_env.py: not important.
-16. requirement_reach.txt: all packages I have in my conda environment.
 
-The above introduction may not be detailed, if you have questions, let me know.
+TODOs: 1. Create another environment, which will take picture as observation.
+       2. Create another task, maybe pick and place.
