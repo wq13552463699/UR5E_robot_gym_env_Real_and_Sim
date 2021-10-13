@@ -1,5 +1,5 @@
 # UCD_UR5E
+Reinforcement learning environment for UR5e robot with OPENAI gym like format.
+Include both simulation and real parts.
 
-Include:
-1.Python API of UR5r robots
-2. RLbench-Pyrep-Vrep(Coppeliasim) files and code.
+
