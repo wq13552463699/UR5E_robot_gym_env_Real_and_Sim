@@ -3,15 +3,16 @@
     
 ## Highlight:
 1. The reset system of the UR5e robot arm, when the UR5E robot tends to cross the safety range, the UR5e robot arm will be reset.Forward_kin_v1.py defines the forward kinematics model of the UR5E robot, which allows the detailed point coordinates of the robot's body to be output when only the joint angle of the robot is input. For details, please see my other folder: 、、、
-2. Automatic rewarding system: Detect the position of the target object in the environment in the robot coordinates, and calculate the distance between the end effector of the robot and the target object at each step.
-    Principle: 1. Train the detectron2 neural network, the objects that can be detected include circles, balls, rectangles and cuboids.
-               2. Place 4 rectangular labels in the four corners of the environment as a reference.
-               3. Place an object in the environment and use the trained detectron to capture the object in the environment. And calculate the relative coordinates between the object and the label.
+2. Automatic rewarding system: Detect the position of the target object in the environment in the robot coordinates, and calculate the distance between the end effector of the robot and the target object at each step.\
+    **Principle**: \
+    	       1. Train the detectron2 neural network, the objects that can be detected include circles, balls, rectangles and cuboids.\
+               2. Place 4 rectangular labels in the four corners of the environment as a reference.\
+               3. Place an object in the environment and use the trained detectron to capture the object in the environment. And calculate the relative coordinates between the object and the label.\
                4. Transform the picture coordinates into robot coordinates through coordinate transformation.
                
 ## Robot control method: 
-Currently only joint control is supported, please see the example video: https://www.youtube.com/watch?v=pjcWBtBDatA
-This video does not represent the results of training, but is just an example of environmental work.
+Currently only joint control is supported, please see the example video: https://www.youtube.com/watch?v=pjcWBtBDatA \
+		This video does not represent the results of training, but is just an example of environmental work.
 
 ## Installaiton
 1. Please check the packages in requirement_reach.txt and install the packages you don’t have
@@ -35,9 +36,9 @@ The prerequest is to buy a sufficiently long network cable, one end is plugged i
 
 ## Hardware setup
 <picture>
-1. Universal robot UR5e robotic arm.
-2. Camera: Intel Real Sense D435
-3. vention UR5E robotic arm working platform
+	1. Universal robot UR5e robotic arm.\
+	2. Camera: Intel Real Sense D435\
+	3. vention UR5E robotic arm working platform
 
 ## Implementation
 The real_UR5_gym_v1.py file is the code of the environment you want to use. Its format is gym format. You can use any algorithms code that is compatible with the gym environment.
