@@ -1,6 +1,5 @@
 # UCD_UR5E
-Reinforcement learning environment for UR5e robot with OPENAI gym like format.
-Include both simulation and real parts.
+This repository includes two sub-folders, which are projects on the simulator and the actual robot. For seeing the details, please click into different folders.
 
 
 ## Contributing
