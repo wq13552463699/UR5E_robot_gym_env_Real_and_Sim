@@ -8,6 +8,7 @@
                2. Place 4 rectangular labels in the four corners of the environment as a reference.
                3. Place an object in the environment and use the trained detectron to capture the object in the environment. And calculate the relative coordinates between the object and the label.
                4. Transform the picture coordinates into robot coordinates through coordinate transformation.
+               **/Please go to google drive to download the trained detectron2 model and put it under the trained_cnn path/**
                
 ## Robot control method: 
 Currently only joint control is supported, please see the example video: <YOUTUBE>
