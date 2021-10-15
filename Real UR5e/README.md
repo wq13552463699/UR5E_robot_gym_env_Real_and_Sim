@@ -16,7 +16,7 @@ Currently only joint control is supported, please see the example video: https:/
 
 ## Installaiton
 1. Please check the packages in requirement_reach.txt and install the packages you don’t have
-2. Super Important packages: detectron2; pyrealsense2, urx
+2. Super Important packages: detectron2; pyrealsense2; urx
 
 ## Tutorial for UR5e robot to connect with computer via TCP/IP:
 The prerequest is to buy a sufficiently long network cable, one end is plugged into the robot's control box's externet cable interface, and the other end is plugged into the computer.
