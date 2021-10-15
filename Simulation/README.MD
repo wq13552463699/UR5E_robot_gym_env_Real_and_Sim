@@ -7,6 +7,8 @@ Please check the packages in requirement_reach.txt and install the packages you 
 
 # Environment setup
 The environments I was using was included in two .ttt files, One of the environments has more input, and you can choose at most three cameras, while the other environment has less input, only one camera input. as follows:
+<img src="https://github.com/wq13552463699/UR5E_robot_gym_env_Real_and_Sim/blob/main/Simulation/images/2.png" width="633" >\
+<img src="https://github.com/wq13552463699/UR5E_robot_gym_env_Real_and_Sim/blob/main/Simulation/images/3.png" width="633" >\
 
 ## Implementation
 The CoppeliaSim_UR5_gym_v0.py and CoppeliaSim_UR5_gym_v3.py files are the code of the environment you want to use. \
