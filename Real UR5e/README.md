@@ -2,7 +2,7 @@
     Author: Qiang Wang
     
 ## Highlight:
-1. The reset system of the UR5e robot arm, when the UR5E robot tends to cross the safety range, the UR5e robot arm will be reset.Forward_kin_v1.py defines the forward kinematics model of the UR5E robot, which allows the detailed point coordinates of the robot's body to be output when only the joint angle of the robot is input. For details, please see my other folder: https://github.com/wq13552463699/UR5E_robot_advanced_forward_kinematic_system
+1. The reset system of the UR5e robot arm, when the UR5E robot tends to cross the safety range, the UR5e robot arm will be reset.Forward_kin_v1.py defines the forward kinematics model of the UR5E robot, which allows the detailed point coordinates of the robot's body to be output when only the joint angle of the robot is input. For details, please see an of my folder: https://github.com/wq13552463699/UR5E_robot_advanced_forward_kinematic_system
 2. Automatic rewarding system: Detect the position of the target object in the environment in the robot coordinates, and calculate the distance between the end effector of the robot and the target object at each step.\
     **Principle**: \
     	       1. Train the detectron2 neural network, the objects that can be detected include circles, balls, rectangles and cuboids.\
