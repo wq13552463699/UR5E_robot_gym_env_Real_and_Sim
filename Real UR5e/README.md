@@ -1,4 +1,4 @@
-# UR5e Robotic arm gym simulation environment(Pixel obervation + Reaching task)
+# UR5e Robotic arm GYM reinforcement learning environment(Pixel obervation + Reaching task)
     Author: Qiang Wang
     
 ## Highlight:
