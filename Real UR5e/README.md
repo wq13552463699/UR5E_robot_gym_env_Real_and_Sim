@@ -35,7 +35,7 @@ The prerequest is to buy a sufficiently long network cable, one end is plugged i
 3. Install the API and run your code.
 
 ## Hardware setup
-<picture>
+<img src="https://github.com/wq13552463699/UR5E_robot_gym_env_Real_and_Sim/blob/main/Real%20UR5e/images/42c2a3ff536ac961c121369f277d9c9.jpg" width="633" >
 	1. Universal robot UR5e robotic arm.\
 	2. Camera: Intel Real Sense D435\
 	3. vention UR5E robotic arm working platform
