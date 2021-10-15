@@ -10,7 +10,8 @@
                4. Transform the picture coordinates into robot coordinates through coordinate transformation.
                
 ## Robot control method: 
-Currently only joint control is supported, please see the example video: <YOUTUBE>
+Currently only joint control is supported, please see the example video: https://www.youtube.com/watch?v=pjcWBtBDatA
+This video does not represent the results of training, but is just an example of environmental work.
 
 ## Installaiton
 1. Please check the packages in requirement_reach.txt and install the packages you don’t have
