@@ -1,5 +1,5 @@
 # UR5E/UR5 robot gym environment(Simulation + Real robot)
-This repository includes two sub-folders, which are projects on the simulator and the actual robot. For seeing the details, please click into different folders.
+This repository includes two sub-folders, which are projects on the simulator and the actual robot. Please click in for the details.
 
 
 ## Contributing
