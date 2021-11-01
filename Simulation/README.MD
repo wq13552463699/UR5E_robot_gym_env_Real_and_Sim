@@ -1,6 +1,6 @@
 # UR5 Robotic arm GYM simulation environment(CoppeliaSim + Pixel obervation + Reaching task)
 Author: Qiang Wang \
-Use CoppliaSim as the physics engine, and directly use the image as the observation to train the agent. This environment is easy to adjust the configuration, but at the expense of training speed
+Use CoppliaSim as the physics engine, and directly use the image as the observation to train the agent. This environment is easy to adjust the configuration and can monitor the real-time performance of the robot better, but at the expense of training speed. The environment with mujuco and pybullet as the physics engine is being updated.
 
 ## Installation
 Please check the packages in requirement_reach.txt and install the packages you don’t have
